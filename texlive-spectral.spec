@@ -1,6 +1,6 @@
 Name:		texlive-spectral
 Version:	64528
-Release:	1
+Release:	2
 Summary:	Spectral fonts with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/spectral
