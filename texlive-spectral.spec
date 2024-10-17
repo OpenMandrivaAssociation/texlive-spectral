@@ -3,7 +3,7 @@ Version:	64528
 Release:	2
 Summary:	Spectral fonts with LaTeX support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/spectral
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/spectral
 License:	ofl lppl
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/spectral.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/spectral.doc.r%{version}.tar.xz
