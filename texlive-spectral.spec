@@ -12,7 +12,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/spectral.r%{tl_r
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/spectral.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 This package provides LaTeX, pdfLaTeX, XeLaTeX and LuaLaTeX support for
@@ -21,3 +22,10 @@ Production Type digital type design agency. Spectral is a new and
 versatile serif face available in seven weights of roman and italic,
 with small caps.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from spectral:
+Map spectral.map
+TL_DROPIN_EOF
